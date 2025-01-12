@@ -1,0 +1,10 @@
+For encryption:-
+
+python encryption_tool.py input_image.jpg encrypted_image.enc --key my_secret_key
+
+
+
+For decryption:-
+
+python encryption_tool.py encrypted_image.enc decrypted_image.jpg --key my_secret_key --decrypt
+
