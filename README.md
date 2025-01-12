@@ -22,4 +22,4 @@ python script.py encrypted_output.jpg decrypted_output.jpg --key your_key --decr
 **Dependencies:**
 pycryptodome
 
-**Note:** The script uses AES in ECB mode, which does not involve an initialization vector (IV). For production use, consider a more secure mode like CBC or GCM.
+**Note:** The script uses AES in ECB mode, which does not involve an initialization vector (IV). For production use, consider a more secure mode like CBC or GCM. 
