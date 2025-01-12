@@ -1,25 +1,27 @@
 **Description:**
-This Python project demonstrates how to use AES encryption to securely encrypt and decrypt image files. The script leverages the pycryptodome library for cryptographic operations and provides an easy-to-use CLI (Command Line Interface) for users to encrypt or decrypt image files with a custom key.
+
+This Python script uses AES encryption to encrypt and decrypt image files. It leverages the pycryptodome library for cryptographic operations and provides a simple CLI for encrypting or decrypting files with a custom key. It handles padding/unpadding automatically and supports file paths, key input, and encryption/decryption modes.
 
 **Features:**
-Encrypt any image file using AES encryption with ECB mode.
-Decrypt encrypted image files to restore the original image.
-Padding and unpadding of data are handled automatically.
-CLI support with options for file paths, key input, and encryption/decryption mode.
+
+Encrypt and decrypt image files using AES (ECB mode).
+Automatically handles padding and unpadding of data.
+CLI for specifying input/output paths and key.
 
 **How to Use:**
-Provide the input file path, output file path, and a key using the command line.
-Use the --decrypt flag to switch from encryption to decryption.
 
-**(Example Commands:)**
+Provide file paths and a key via the command line.
+Use --decrypt flag to decrypt an image.
 
-**Encrypt an image:**
-python script.py input.jpg encrypted_output.jpg --key your_key
+**Example Commands:**
 
-**Decrypt an image:**
-python script.py encrypted_output.jpg decrypted_output.jpg --key your_key --decrypt
+**Encrypt:** python script.py input.jpg encrypted.jpg --key key
+
+**Decrypt:** python script.py encrypted.jpg output.jpg --key key --decrypt
 
 **Dependencies:**
+
 pycryptodome
 
-**Note:** The script uses AES in ECB mode, which does not involve an initialization vector (IV). For production use, consider a more secure mode like CBC or GCM. 
+**Note:**
+The script uses AES in ECB mode, which does not use an IV. For better security, consider using CBC or GCM.
