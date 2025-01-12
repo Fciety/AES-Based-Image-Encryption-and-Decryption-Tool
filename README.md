@@ -11,10 +11,11 @@ CLI support with options for file paths, key input, and encryption/decryption mo
 Provide the input file path, output file path, and a key using the command line.
 Use the --decrypt flag to switch from encryption to decryption.
 
-**Example Commands:**
+**(Example Commands:)**
 
 **Encrypt an image:**
 python script.py input.jpg encrypted_output.jpg --key your_key
+
 **Decrypt an image:**
 python script.py encrypted_output.jpg decrypted_output.jpg --key your_key --decrypt
 
